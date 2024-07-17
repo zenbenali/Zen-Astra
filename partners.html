@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Partners</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding-bottom: 60px; /* Adjusted for footer height */
+    padding-top: 20px; /* Space for header */
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space between partner logos and footer */
+  }
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea; /* Default background */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .partner {
+    text-align: center;
+    margin: 0 15px; /* Space between partner items */
+  }
+  .partner img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Make images circular */
+    border: 3px solid #fff; /* White border around images */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for images */
+    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  .partner img:hover {
+    transform: scale(1.1); /* Scale image on hover */
+  }
+  .footer_bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 style="text-align: center;">Our Partners</h1>
+  
+  <div id="partner-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="partner">
+          <img src="img/hostinger.png" alt="Partner 1">
+          <p>Hostinger</p>
+        </div>
+        <div class="partner">
+          <img src="img/github-logo.png" alt="Partner 2">
+          <p>Github</p>
+        </div>
+        <div class="partner">
+          <img src="img/wordpress.png" alt="Partner 4">
+          <p>Wordpress</p>
+        </div>
+        <div class="partner">
+          <img src="img/netlify.png" alt="Partner 5">
+          <p>Netlify</p>
+        </div>
+        <div class="partner">
+          <img src="img/miro.jpg" alt="Partner 6">
+          <p>Miro AI</p>
+        </div>
+        <div class="partner">
+          <img src="img/namecheap.png" alt="Partner 7">
+          <p>Namecheap</p>
+        </div>
+        <div class="partner">
+          <img src="img/whitelabelfoxLtd.png" alt="Partner 8">
+          <p>White Label Fox, Ltd</p>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+      <div class="carousel-item">
+        <div class="partner">
+          <img src="img/acnc.png" alt="Partner 9">
+          <p>ACNC-RCA</p>
+        </div>
+        <div class="partner">
+          <img src="img/namecheap.png" alt="Partner 10">
+          <p>Namecheap</p>
+        </div>
+        <div class="partner">
+          <img src="img/whitelabelfoxLtd.png" alt="Partner 11">
+          <p>white Label Fox Ltd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2><button><a href="index.html"><-back</a></button></h2>
+<div class="footer_bottom">
+  <span>© Zen-Astra 2024. All rights reserved, <a href="http://zen-astra.org" style="color: #fff;">zen-astra.org</a></span>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#partner-carousel').carousel({
+      interval: 2000 // Adjust the interval as per your requirement (in milliseconds)
+    });
+  });
+</script>
+</body>
+</html>
